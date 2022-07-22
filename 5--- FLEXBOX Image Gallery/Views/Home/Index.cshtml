@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 5px;
+        }
+
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 5px;
+        }
+
+            .column img {
+                margin-top: 6px;
+                width: 100%;
+                vertical-align: middle;
+            }
+
+        @@media screen and (max-width:800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @@media screen and (max-width:600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Image Gallery with Flexbow</h1>
+        <p>Flexbox konusu</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="~/img/img-lorempicsum/bina.jpg" />
+            <img src="~/img/img-lorempicsum/deniz.jpg" />
+            <img src="~/img/img-lorempicsum/sonbahar.jpg" />
+            <img src="~/img/img-lorempicsum/konser.jpg" />
+        </div>
+        <div class="column">
+            <img src="~/img/img-lorempicsum/çay.jpg" />
+            <img src="~/img/img-lorempicsum/köprü.jpg" />
+            <img src="~/img/img-lorempicsum/sehir.jpg" />
+            <img src="~/img/img-lorempicsum/demiryolu.jpg" />
+        </div>
+        <div class="column">
+            <img src="~/img/img-lorempicsum/kaykay.jpg" />
+            <img src="~/img/img-lorempicsum/car.jpg" />
+            <img src="~/img/img-lorempicsum/kuzey ışıkları.jpg" />
+            <img src="~/img/img-lorempicsum/kış.jpg" />
+        </div>
+        <div class="column">
+            <img src="~/img/img-lorempicsum/mac.jpg" />
+            <img src="~/img/img-lorempicsum/tatlı.jpg" />
+            <img src="~/img/img-lorempicsum/mom and child.jpg" />
+        </div>
+
+    </div>
+</body>
+</html>
+
